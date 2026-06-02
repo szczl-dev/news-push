@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.news-push.daily</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Frameworks/Python.framework/Versions/3.11/bin/python3</string>
+        <string>/Users/littlecuteh/Desktop/hw-project/news-push/main.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/littlecuteh/Desktop/hw-project/news-push</string>
+
+    <!-- 每天本地时间 8:00 执行 (北京时间 = UTC+8) -->
+    <!-- 如果你的 Mac 不在东八区，请调整 Hour -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- 日志 -->
+    <key>StandardOutPath</key>
+    <string>/Users/littlecuteh/Desktop/hw-project/news-push/logs/stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/littlecuteh/Desktop/hw-project/news-push/logs/stderr.log</string>
+
+    <!-- 环境变量 -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/littlecuteh</string>
+    </dict>
+</dict>
+</plist>
