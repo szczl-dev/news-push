@@ -51,7 +51,7 @@ FEISHU_WEBHOOK = os.getenv(
 # Anthropic (DeepSeek compatible)
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 ANTHROPIC_BASE_URL = os.getenv("ANTHROPIC_BASE_URL", "https://api.deepseek.com/anthropic")
-ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "deepseek-chat")
+ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "deepseek-v4-pro")
 
 # HTTP Proxy (optional, for accessing blocked feeds)
 HTTP_PROXY = os.getenv("HTTP_PROXY", "")
